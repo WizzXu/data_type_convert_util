@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 增加类型转换
 
-* TODO: Describe initial release.
+## [0.0.2] - 修改为输入空值，返回空值

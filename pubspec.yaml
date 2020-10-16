@@ -1,6 +1,6 @@
 name: data_type_convert_util
 description: 数据类型转换工具类
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/AerialLadder/data_type_convert_util
 
 environment:

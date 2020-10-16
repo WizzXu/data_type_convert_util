@@ -1,8 +1,7 @@
-
 class DataConvert {
   /// 强制把 value 转换成 String
   static String $toString(v) {
-    return v ?? "";
+    return v?.toString() ?? "";
   }
 
   /// 强制转换 value 为 int
@@ -10,7 +9,7 @@ class DataConvert {
     try {
       return int.parse(v);
     } catch (e) {
-      return 0;
+      return null == v ? null : 0;
     }
   }
 
@@ -19,7 +18,7 @@ class DataConvert {
     try {
       return double.parse(v);
     } catch (e) {
-      return 0;
+      return null == v ? null : 0;
     }
   }
 }
