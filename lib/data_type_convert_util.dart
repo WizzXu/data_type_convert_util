@@ -7,7 +7,11 @@ class DataConvert {
   /// 强制转换 value 为 int
   static int $toInt(v) {
     try {
-      return int.parse(v);
+      if (v is int) {
+        return v;
+      } else {
+        return int.parse(v);
+      }
     } catch (e) {
       return null == v ? null : 0;
     }
@@ -16,7 +20,11 @@ class DataConvert {
   /// 强制转换 value 为 double
   static double $toDouble(v) {
     try {
-      return double.parse(v);
+      if (v is double) {
+        return v;
+      } else {
+        return double.parse(v);
+      }
     } catch (e) {
       return null == v ? null : 0;
     }
