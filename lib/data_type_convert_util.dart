@@ -10,7 +10,7 @@ class DataConvert {
       if (v is int) {
         return v;
       } else {
-        return int.parse(v);
+        return double.parse(v.toString()).round();
       }
     } catch (e) {
       return null == v ? null : 0;
@@ -23,7 +23,7 @@ class DataConvert {
       if (v is double) {
         return v;
       } else {
-        return double.parse(v);
+        return double.parse(v.toString());
       }
     } catch (e) {
       return null == v ? null : 0;
