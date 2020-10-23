@@ -1,7 +1,7 @@
 class DataConvert {
   /// 强制把 value 转换成 String
   static String $toString(v) {
-    return v?.toString() ?? "";
+    return v?.toString();
   }
 
   /// 强制转换 value 为 int
